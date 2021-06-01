@@ -52,7 +52,7 @@ class validateAttributes {
             !isValidateQuality(qualityImage) ||
             (cropImage != null && !isValidateCrop(cropImage)) ||
             !isValidateBlur(blurImage) ||
-            (!isValidateTypeFormat(typeFormatImage))
+            !isValidateTypeFormat(typeFormatImage)
         ) {
             throw new BadAttributesException("Please check params!");
         }
